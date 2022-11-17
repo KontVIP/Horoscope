@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Horoscope</string>
+    <string name="aries">Aries</string>
+    <string name="taurus">Taurus</string>
+    <string name="gemini">Gemini</string>
+    <string name="cancer">Cancer</string>
+    <string name="leo">Leo</string>
+    <string name="virgo">Virgo</string>
+    <string name="libra">Libra</string>
+    <string name="scorpius">Scorpius</string>
+    <string name="sagittarius">Sagittarius</string>
+    <string name="capricornus">Capricornus</string>
+    <string name="aquarius">Aquarius</string>
+    <string name="pisces">Pisces</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="compability">Compability:</string>
+    <string name="mood">Mood:</string>
+    <string name="color">Color:</string>
+    <string name="lucky_number">Lucky number:</string>
+    <string name="lucky_time">Lucky time:</string>
+    <string name="no_internet">No Internet connection!</string>
+</resources>

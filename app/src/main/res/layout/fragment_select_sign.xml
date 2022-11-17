@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:alignmentMode="alignBounds"
+    android:background="@color/white"
+    android:columnCount="3"
+    android:padding="@dimen/space_small"
+    android:rowOrderPreserved="false"
+    android:useDefaultMargins="true">
+
+    <TextView
+        android:id="@+id/ariesTextView"
+        style="@style/SignTextView"
+        android:tag="aries"
+        android:text="@string/aries" />
+
+    <TextView
+        android:id="@+id/taurusTextView"
+        style="@style/SignTextView"
+        android:tag="taurus"
+        android:text="@string/taurus" />
+
+    <TextView
+        android:id="@+id/geminiTextView"
+        style="@style/SignTextView"
+        android:tag="gemini"
+        android:text="@string/gemini" />
+
+    <TextView
+        android:id="@+id/cancerTextView"
+        style="@style/SignTextView"
+        android:tag="cancer"
+        android:text="@string/cancer" />
+
+    <TextView
+        android:id="@+id/leoTextView"
+        style="@style/SignTextView"
+        android:tag="leo"
+        android:text="@string/leo" />
+
+    <TextView
+        android:id="@+id/virgoTextView"
+        style="@style/SignTextView"
+        android:tag="virgo"
+        android:text="@string/virgo" />
+
+    <TextView
+        android:id="@+id/libraTextView"
+        style="@style/SignTextView"
+        android:tag="libra"
+        android:text="@string/libra" />
+
+    <TextView
+        android:id="@+id/scorpiusTextView"
+        style="@style/SignTextView"
+        android:tag="scorpius"
+        android:text="@string/scorpius" />
+
+    <TextView
+        android:id="@+id/sagittariusTextView"
+        style="@style/SignTextView"
+        android:tag="sagittarius"
+        android:text="@string/sagittarius" />
+
+    <TextView
+        android:id="@+id/capricornusTextView"
+        style="@style/SignTextView"
+        android:tag="capricornus"
+        android:text="@string/capricornus" />
+
+    <TextView
+        android:id="@+id/aquariusTextView"
+        style="@style/SignTextView"
+        android:tag="aquarius"
+        android:text="@string/aquarius" />
+
+    <TextView
+        android:id="@+id/piscesTextView"
+        style="@style/SignTextView"
+        android:tag="pisces"
+        android:text="@string/pisces" />
+
+</GridLayout>

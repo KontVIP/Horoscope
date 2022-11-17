@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/SelectSignFragment">
+
+    <fragment
+        android:id="@+id/SignFragment"
+        android:name="com.github.kontvip.horoscope.presentation.screen.sign.SignFragment"
+        android:label="SignFragment" >
+        <action
+            android:id="@+id/action_SignFragment_to_SelectSignFragment"
+            app:destination="@id/SelectSignFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SelectSignFragment"
+        android:name="com.github.kontvip.horoscope.presentation.screen.select.SelectSignFragment"
+        android:label="SelectSignFragment" >
+        <action
+            android:id="@+id/action_SelectSignFragment_to_SignFragment"
+            app:destination="@id/SignFragment" />
+    </fragment>
+</navigation>
