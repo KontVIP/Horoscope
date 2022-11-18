@@ -56,8 +56,8 @@
     <TextView
         android:id="@+id/scorpiusTextView"
         style="@style/SignTextView"
-        android:tag="scorpius"
-        android:text="@string/scorpius" />
+        android:tag="scorpio"
+        android:text="@string/scorpio" />
 
     <TextView
         android:id="@+id/sagittariusTextView"
@@ -68,8 +68,8 @@
     <TextView
         android:id="@+id/capricornusTextView"
         style="@style/SignTextView"
-        android:tag="capricornus"
-        android:text="@string/capricornus" />
+        android:tag="capricorn"
+        android:text="@string/capricorn" />
 
     <TextView
         android:id="@+id/aquariusTextView"
