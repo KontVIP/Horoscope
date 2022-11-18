@@ -9,6 +9,7 @@ sealed interface Day {
     fun day(): String
     fun isSameDay(day: Day): Boolean
     fun date(): String
+    fun isDateActual(oldDate: String): Boolean
 
     class WithId(private val id: Int) : DayWithId {
         override fun day(): Day = when (id) {
@@ -28,8 +29,16 @@ sealed interface Day {
         override fun isSameDay(day: Day) = day == this
 
         override fun date(): String {
-            val date = Date(System.currentTimeMillis()-TimeUnit.DAYS.toMillis(dayDifference))
-            return SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(date)
+            val date = Date(System.currentTimeMillis() - TimeUnit.DAYS.toMillis(dayDifference))
+            return SimpleDateFormat("yyyy-MM-dd-hh", Locale.getDefault()).format(date)
+        }
+
+        override fun isDateActual(oldDate: String): Boolean {
+            val partsOldDate = oldDate.split("-")
+            val partsNewDate = date().split("-")
+            if (partsOldDate[2] != partsNewDate[2]) return false
+            if (partsNewDate[3].toInt() - partsOldDate[3].toInt() >= 6) return false
+            return true
         }
     }
 

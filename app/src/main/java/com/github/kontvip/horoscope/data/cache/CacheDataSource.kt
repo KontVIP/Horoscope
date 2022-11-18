@@ -39,7 +39,7 @@ interface CacheDataSource {
 
         override suspend fun contains(sign: String, day: Day): Boolean {
             val data = dao.horoscope(sign, day.day()) ?: return false
-            if (data.calendarDate != day.date()) {
+            if (!day.isDateActual(data.calendarDate)) {
                 dao.deleteHoroscope(sign, day.day())
                 return false
             }
