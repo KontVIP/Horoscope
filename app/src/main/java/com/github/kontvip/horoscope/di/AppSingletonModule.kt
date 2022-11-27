@@ -19,17 +19,7 @@ class AppSingletonModule {
 
     @Provides
     @Singleton
-    fun provideObserveNavigationCommunication(communication: NavigationCommunication.Mutable): NavigationCommunication.Observe =
-        communication
-
-    @Provides
-    @Singleton
-    fun provideMutateNavigationCommunication(communication: NavigationCommunication.Mutable): NavigationCommunication.Mutate =
-        communication
-
-    @Provides
-    @Singleton
-    fun provideMutableNavigationCommunication(): NavigationCommunication.Mutable =
+    fun provideNavigationCommunication(): NavigationCommunication =
         NavigationCommunication.Base()
 
     @Provides

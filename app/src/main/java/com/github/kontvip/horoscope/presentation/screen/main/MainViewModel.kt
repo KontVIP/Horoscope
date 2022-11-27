@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
-    private val navigationCommunication: NavigationCommunication.Mutable,
+    private val navigationCommunication: NavigationCommunication,
     private val interactor: HoroscopeInteractor
 ) : ViewModel(), Init, Communication.Observe<Navigation> {
 

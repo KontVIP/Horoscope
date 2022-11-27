@@ -11,7 +11,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class SelectSignViewModel @Inject constructor(
-    private val navigationCommunication: NavigationCommunication.Mutable,
+    private val navigationCommunication: NavigationCommunication,
     private val interactor: HoroscopeInteractor
 ) : ViewModel() {
 
