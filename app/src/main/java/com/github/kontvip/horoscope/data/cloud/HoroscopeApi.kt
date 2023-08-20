@@ -1,7 +1,6 @@
 package com.github.kontvip.horoscope.data.cloud
 
 import com.github.kontvip.horoscope.data.model.Horoscope
-import com.google.gson.JsonObject
 import retrofit2.Response
 import retrofit2.http.Headers
 import retrofit2.http.POST

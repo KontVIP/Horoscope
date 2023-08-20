@@ -23,7 +23,7 @@ interface Communication {
             liveData.observe(owner, observer)
     }
 
-    abstract class Ui<T>(
+    abstract class Ui<T: Any>(
         liveData: MutableLiveData<T> = MutableLiveData()
     ) : Abstract<T>(liveData) {
 
@@ -32,7 +32,7 @@ interface Communication {
         }
     }
 
-    abstract class Post<T>(
+    abstract class Post<T: Any>(
         liveData: MutableLiveData<T> = MutableLiveData()
     ) : Abstract<T>(liveData) {
         override fun map(source: T) = liveData.postValue(source)

@@ -14,7 +14,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 abstract class BaseDayFragment : BaseFragment<FragmentDayBinding>() {
 
-    protected val viewModel by viewModels<SignViewModel>()
+    private val viewModel by viewModels<SignViewModel>()
     protected abstract val day: Day
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

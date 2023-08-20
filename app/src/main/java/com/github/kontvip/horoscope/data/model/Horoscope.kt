@@ -21,13 +21,8 @@ data class Horoscope(
 
     interface Mapper<T> {
         fun map(
-            date: String,
-            description: String,
-            compatibility: String,
-            mood: String,
-            color: String,
-            luckyNumber: String,
-            luckyTime: String
+            date: String, description: String, compatibility: String, mood: String,
+            color: String, luckyNumber: String, luckyTime: String
         ): T
     }
 

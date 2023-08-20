@@ -2,7 +2,6 @@ package com.github.kontvip.horoscope.data.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
-import androidx.room.PrimaryKey
 
 @Entity(tableName = "horoscope_table", primaryKeys = ["day", "sign"])
 data class HoroscopeCache(

@@ -8,24 +8,11 @@ interface ToCacheMapper : Horoscope.Mapper<HoroscopeCache> {
 
     class Base(private val day: Day, private val sign: String) : ToCacheMapper {
         override fun map(
-            date: String,
-            description: String,
-            compatibility: String,
-            mood: String,
-            color: String,
-            luckyNumber: String,
-            luckyTime: String
+            date: String, description: String, compatibility: String, mood: String,
+            color: String, luckyNumber: String, luckyTime: String
         ): HoroscopeCache = HoroscopeCache(
-            day.day(),
-            day.date(),
-            sign,
-            date,
-            description,
-            compatibility,
-            mood,
-            color,
-            luckyNumber,
-            luckyTime
+            day.day(), day.date(), sign, date, description, compatibility,
+            mood, color, luckyNumber, luckyTime
         )
     }
 

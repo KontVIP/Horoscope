@@ -2,7 +2,6 @@ package com.github.kontvip.horoscope.presentation.core
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
-import com.github.kontvip.horoscope.domain.model.Day
 import com.github.kontvip.horoscope.presentation.model.UiState
 
 interface SignCommunication : ObserveSign {

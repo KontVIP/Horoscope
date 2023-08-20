@@ -4,11 +4,6 @@ import android.content.Context
 import com.github.kontvip.horoscope.data.model.Horoscope
 import com.github.kontvip.horoscope.data.model.HoroscopeCache
 import com.github.kontvip.horoscope.domain.model.Day
-import kotlinx.coroutines.sync.Mutex
-import kotlinx.coroutines.sync.withLock
-import java.text.SimpleDateFormat
-import java.time.Instant
-import java.util.*
 
 interface CacheDataSource {
 
