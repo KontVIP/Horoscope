@@ -8,7 +8,7 @@ Technologies: Retrofit, Room, Hilt, Navigation Graph, Coroutines.
 
 Architecture pattern: MVVM.
 
-Patterns: Data Mapper, Facade.
+Design Patterns: Data Mapper, Facade.
 
 API: https://aztro.readthedocs.io/en/latest/
 
