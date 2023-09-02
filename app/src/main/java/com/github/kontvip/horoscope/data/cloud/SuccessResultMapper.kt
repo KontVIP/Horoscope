@@ -12,7 +12,7 @@ interface SuccessResultMapper : Mapper<HoroscopeResult, Response<Horoscope>> {
         override fun map(source: Response<Horoscope>): HoroscopeResult {
             val result = source.body()
             return if (result == null)
-                HoroscopeResult.Error(source.errorBody().toString())
+                HoroscopeResult.Error(source.errorBody()?.string() ?: "")
             else
                 HoroscopeResult.Success(result)
         }

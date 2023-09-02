@@ -42,20 +42,20 @@ sealed interface Day {
         }
     }
 
-    class Yesterday : Abstract() {
-        override val day: String = "yesterday"
+    data class Yesterday(
+        override val day: String = "yesterday",
         override val dayDifference: Long = 1
-    }
+    ) : Abstract()
 
-    class Today : Abstract() {
-        override val day: String = "today"
+    data class Today(
+        override val day: String = "today",
         override val dayDifference: Long = 0
-    }
+    ) : Abstract()
 
-    class Tomorrow : Abstract() {
-        override val day: String = "tomorrow"
+    data class Tomorrow(
+        override val day: String = "tomorrow",
         override val dayDifference: Long = -1
-    }
+    ) : Abstract()
 }
 
 interface DayWithId {

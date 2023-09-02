@@ -11,13 +11,13 @@ sealed class HoroscopeResult(private val horoscope: Horoscope, private val error
 
     abstract fun handleCache(block: () -> Unit)
 
-    class Success(horoscope: Horoscope) : HoroscopeResult(horoscope, "") {
+    data class Success(private val horoscope: Horoscope) : HoroscopeResult(horoscope, "") {
         override fun handleCache(block: () -> Unit) {
             block.invoke()
         }
     }
 
-    class Error(errorMessage: String) :
+    data class Error(private val errorMessage: String) :
         HoroscopeResult(Horoscope("", "", "", "", "", "", ""), errorMessage) {
         override fun handleCache(block: () -> Unit) = Unit
     }
